@@ -1,0 +1,374 @@
+###############################################################################
+#
+# IAR ELF Linker V3.10.1.201 for STM8                     08/Jan/2018  22:43:20
+# Copyright 2010-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        L:\DIY\AxProjects\lib.c\stavrp\examples\stm8s\Debug\Exe\example_mix01.out
+#    Map file     =  
+#        L:\DIY\AxProjects\lib.c\stavrp\examples\stm8s\Debug\List\example_mix01.map
+#    Command line =  
+#        -f C:\Users\axill\AppData\Local\Temp\EW8B24.tmp
+#        (L:\DIY\AxProjects\lib.c\stavrp\examples\stm8s\Debug\Obj\main.o
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb -o
+#        L:\DIY\AxProjects\lib.c\stavrp\examples\stm8s\Debug\Exe\example_mix01.out
+#        --map
+#        L:\DIY\AxProjects\lib.c\stavrp\examples\stm8s\Debug\List\example_mix01.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0\stm8\config\lnkstm8s105c6.icf" --config_def _CSTACK_SIZE=0x200
+#        --config_def _HEAP_SIZE=0x1000 --entry __iar_program_start
+#        --debug_lib)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__SystemLibrary            = DLib
+__code_model               = small
+__core                     = stm8
+__data_model               = medium
+__dlib_file_descriptor     = 0
+__dlib_full_locale_support = 0
+__rt_version               = 4
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at start of [0x000000-0x0000ff] { rw section .vregs };
+"A1":  place at end of [0x000000-0x0007ff] { block CSTACK };
+"P2":  place in [from 0x000000 to 0x0007ff] {
+          block HEAP, rw section __DLIB_PERTHREAD, rw section .far.bss,
+          rw section .far.data, rw section .far.noinit,
+          rw section .far_func.textrw, rw section .huge.bss,
+          rw section .huge.data, rw section .huge.noinit,
+          rw section .huge_func.textrw, rw section .iar.dynexit,
+          rw section .near.bss, rw section .near.data, rw section .near.noinit,
+          rw section .near_func.textrw };
+"A2":  place at start of [0x008000-0x00ffff] { block INTVEC };
+"P3":  place in [from 0x008000 to 0x00ffff] {
+          ro section __DLIB_PERTHREAD_init, ro section .far.data_init,
+          ro section .far_func.textrw_init, ro section .huge.data_init,
+          ro section .huge_func.textrw_init, ro section .iar.init_table,
+          ro section .init_array, ro section .near.data_init,
+          ro section .near.rodata, ro section .near_func.text,
+          ro section .near_func.textrw_init, ro section .tiny.data_init,
+          ro section .tiny.rodata_init };
+"P4":  place in [from 0x008000 to 0x00ffff] {
+          ro section .far.rodata, ro section .far_func.text };
+"P5":  place in [from 0x008000 to 0x00ffff] {
+          ro section .huge.rodata, ro section .huge_func.text };
+do not initialize {
+   rw section .eeprom.noinit, rw section .far.noinit, rw section .huge.noinit,
+   rw section .near.noinit, rw section .tiny.noinit, rw section .vregs };
+
+  Section             Kind      Address   Size  Object
+  -------             ----      -------   ----  ------
+"A0":                                     0x10
+  .vregs              uninit   0x000000   0x10  vregs.o [4]
+                             - 0x000010   0x10
+
+"P2":                                     0x22
+  .near.bss           zero     0x000010   0x14  main.o [1]
+  .near.bss           zero     0x000024    0x4  main.o [1]
+  .near.bss           zero     0x000028    0x4  main.o [1]
+  .near.bss           zero     0x00002c    0x2  main.o [1]
+  .near.bss           zero     0x00002e    0x2  main.o [1]
+  .near.bss           zero     0x000030    0x1  main.o [1]
+  .near.bss           zero     0x000031    0x1  main.o [1]
+                             - 0x000032   0x22
+
+"A1":                                    0x200
+  CSTACK                       0x000600  0x200  <Block>
+    CSTACK            uninit   0x000600  0x200  <Block tail>
+                             - 0x000800  0x200
+
+Absolute sections, part 1 of 7:            0x5
+  .near.noinit        uninit   0x005005    0x1  main.o [1]
+  .near.noinit        uninit   0x005006    0x1  main.o [1]
+  .near.noinit        uninit   0x005007    0x1  main.o [1]
+  .near.noinit        uninit   0x005008    0x1  main.o [1]
+  .near.noinit        uninit   0x005009    0x1  main.o [1]
+                             - 0x00500a    0x5
+
+Absolute sections, part 2 of 7:            0x3
+  .near.noinit        uninit   0x0050c4    0x1  main.o [1]
+  .near.noinit        uninit   0x0050c5    0x1  main.o [1]
+  .near.noinit        uninit   0x0050c6    0x1  main.o [1]
+                             - 0x0050c7    0x3
+
+Absolute sections, part 3 of 7:            0x1
+  .near.noinit        uninit   0x005250    0x1  main.o [1]
+                             - 0x005251    0x1
+
+Absolute sections, part 4 of 7:            0x2
+  .near.noinit        uninit   0x005254    0x1  main.o [1]
+  .near.noinit        uninit   0x005255    0x1  main.o [1]
+                             - 0x005256    0x2
+
+Absolute sections, part 5 of 7:            0x4
+  .near.noinit        uninit   0x005260    0x1  main.o [1]
+  .near.noinit        uninit   0x005261    0x1  main.o [1]
+  .near.noinit        uninit   0x005262    0x1  main.o [1]
+  .near.noinit        uninit   0x005263    0x1  main.o [1]
+                             - 0x005264    0x4
+
+Absolute sections, part 6 of 7:            0x3
+  .near.noinit        uninit   0x005400    0x1  main.o [1]
+  .near.noinit        uninit   0x005401    0x1  main.o [1]
+  .near.noinit        uninit   0x005402    0x1  main.o [1]
+                             - 0x005403    0x3
+
+Absolute sections, part 7 of 7:            0x2
+  .near.noinit        uninit   0x005404    0x1  main.o [1]
+  .near.noinit        uninit   0x005405    0x1  main.o [1]
+                             - 0x005406    0x2
+
+"A2":                                     0x80
+  INTVEC                       0x008000   0x80  <Block>
+    .intvec           const    0x008000   0x80  interrupt.o [4]
+                             - 0x008080   0x80
+
+"P3-P5":                                 0x3e7
+  .near_func.text     ro code  0x008080  0x101  main.o [1]
+  .near_func.text     ro code  0x008181   0x90  vreg_util.o [4]
+  .near_func.text     ro code  0x008211   0x73  main.o [1]
+  .near_func.text     ro code  0x008284   0x48  main.o [1]
+  .near_func.text     ro code  0x0082cc   0x38  main.o [1]
+  .near_func.text     ro code  0x008304   0x2c  long.o [4]
+  .near_func.text     ro code  0x008330   0x25  main.o [1]
+  .iar.init_table     const    0x008355    0x8  - Linker created -
+  .near_func.text     ro code  0x00835d   0x20  main.o [1]
+  .near_func.text     ro code  0x00837d   0x20  main.o [1]
+  .near_func.text     ro code  0x00839d   0x1e  init_small.o [4]
+  .near_func.text     ro code  0x0083bb   0x1d  cstartup.o [4]
+  .near_func.text     ro code  0x0083d8   0x1d  cppinit.o [4]
+  .near_func.text     ro code  0x0083f5   0x14  init.o [4]
+  .near_func.text     ro code  0x008409   0x14  __dbg_xxexit.o [3]
+  .near_func.text     ro code  0x00841d   0x12  main.o [1]
+  .near_func.text     ro code  0x00842f   0x11  main.o [1]
+  .near_func.text     ro code  0x008440    0xf  short.o [4]
+  .near_func.text     ro code  0x00844f    0x5  cexit.o [4]
+  .near_func.text     ro code  0x008454    0x4  main.o [1]
+  .near_func.text     ro code  0x008458    0x3  interrupt.o [4]
+  .near_func.text     ro code  0x00845b    0x3  low_level_init.o [4]
+  .near_func.text     ro code  0x00845e    0x3  exit.o [4]
+  .near_func.text     ro code  0x008461    0x3  unhandled_exception.o [4]
+  SHT$$PREINIT_ARRAY           0x008464    0x0  <Block>
+  SHT$$INIT_ARRAY              0x008464    0x2  <Block>
+    .difunct          const    0x008464    0x2  main.o [1]
+  .near_func.text     ro code  0x008466    0x1  __dbg_break.o [3]
+                             - 0x008467  0x3e7
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address   Size
+          -------   ----
+Zero (__iar_zero_init2)
+    1 destination range, total size 0x22:
+          0x000010  0x22
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data  rw data
+                                                       (abs)
+    ------                 -------  -------  -------  -------
+L:\DIY\AxProjects\lib.c\stavrp\examples\stm8s\Debug\Obj: [1]
+    main.o                     640        2       34       20
+    ---------------------------------------------------------
+    Total:                     640        2       34       20
+
+command line: [2]
+    ---------------------------------------------------------
+    Total:
+
+dbgstm8smd.a: [3]
+    __dbg_break.o                1
+    __dbg_xxexit.o              20
+    ---------------------------------------------------------
+    Total:                      21
+
+dlstm8smn.a: [4]
+    cexit.o                      5
+    cppinit.o                   29
+    cstartup.o                  29
+    exit.o                       3
+    init.o                      20
+    init_small.o                30
+    interrupt.o                  3      128
+    long.o                      44
+    low_level_init.o             3
+    short.o                     15
+    unhandled_exception.o        3
+    vreg_util.o                144
+    vregs.o                                       16
+    ---------------------------------------------------------
+    Total:                     328      128       16
+
+    Linker created                        8      512
+-------------------------------------------------------------
+    Grand Total:               989      138      562       20
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                    Address   Size  Type      Object
+-----                    -------   ----  ----      ------
+.iar.init_table$$Base   0x008355          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00835d          --   Gb  - Linker created -
+??call_ctors            0x0083c8         Code  Gb  cstartup.o [4]
+?and32_l0_l0_0x         0x008307         Code  Gb  long.o [4]
+?and32_l0_l0_l1         0x008304         Code  Gb  long.o [4]
+?b0                     0x000000         Data  Gb  vregs.o [4]
+?b1                     0x000001         Data  Gb  vregs.o [4]
+?b10                    0x00000a         Data  Gb  vregs.o [4]
+?b11                    0x00000b         Data  Gb  vregs.o [4]
+?b12                    0x00000c         Data  Gb  vregs.o [4]
+?b13                    0x00000d         Data  Gb  vregs.o [4]
+?b14                    0x00000e         Data  Gb  vregs.o [4]
+?b15                    0x00000f         Data  Gb  vregs.o [4]
+?b2                     0x000002         Data  Gb  vregs.o [4]
+?b3                     0x000003         Data  Gb  vregs.o [4]
+?b4                     0x000004         Data  Gb  vregs.o [4]
+?b5                     0x000005         Data  Gb  vregs.o [4]
+?b6                     0x000006         Data  Gb  vregs.o [4]
+?b7                     0x000007         Data  Gb  vregs.o [4]
+?b8                     0x000008         Data  Gb  vregs.o [4]
+?b9                     0x000009         Data  Gb  vregs.o [4]
+?e0                     0x000001         Data  Gb  vregs.o [4]
+?e1                     0x000005         Data  Gb  vregs.o [4]
+?e2                     0x000009         Data  Gb  vregs.o [4]
+?e3                     0x00000d         Data  Gb  vregs.o [4]
+?epilogue_l2            0x0081f3         Code  Gb  vreg_util.o [4]
+?l0                     0x000000         Data  Gb  vregs.o [4]
+?l1                     0x000004         Data  Gb  vregs.o [4]
+?l2                     0x000008         Data  Gb  vregs.o [4]
+?l3                     0x00000c         Data  Gb  vregs.o [4]
+?mov_e0_e3              0x0081fa         Code  Gb  vreg_util.o [4]
+?mov_e3_e0              0x008207         Code  Gb  vreg_util.o [4]
+?mov_l0_l3              0x0081f7         Code  Gb  vreg_util.o [4]
+?mov_l3_l0              0x008204         Code  Gb  vreg_util.o [4]
+?mov_w1_w7              0x0081fd         Code  Gb  vreg_util.o [4]
+?mov_w7_w1              0x00820a         Code  Gb  vreg_util.o [4]
+?pop_l0                 0x0081ca         Code  Gb  vreg_util.o [4]
+?pop_l1                 0x0081d5         Code  Gb  vreg_util.o [4]
+?pop_l2                 0x0081e0         Code  Gb  vreg_util.o [4]
+?push_l0                0x008199         Code  Gb  vreg_util.o [4]
+?push_l1                0x00819e         Code  Gb  vreg_util.o [4]
+?push_l2                0x0081a3         Code  Gb  vreg_util.o [4]
+?push_l3                0x0081a8         Code  Gb  vreg_util.o [4]
+?push_w4                0x008181         Code  Gb  vreg_util.o [4]
+?sext16_x_a             0x008448         Code  Gb  short.o [4]
+?sll16_x_x_a            0x008440         Code  Gb  short.o [4]
+?srl32_0x_0x_a          0x008322         Code  Gb  long.o [4]
+?srl32_l0_l0_a          0x00831f         Code  Gb  long.o [4]
+?w0                     0x000000         Data  Gb  vregs.o [4]
+?w1                     0x000002         Data  Gb  vregs.o [4]
+?w2                     0x000004         Data  Gb  vregs.o [4]
+?w3                     0x000006         Data  Gb  vregs.o [4]
+?w4                     0x000008         Data  Gb  vregs.o [4]
+?w5                     0x00000a         Data  Gb  vregs.o [4]
+?w6                     0x00000c         Data  Gb  vregs.o [4]
+?w7                     0x00000e         Data  Gb  vregs.o [4]
+ADC_DRH                 0x005404    0x1  Data  Gb  main.o [1]
+ADC_DRL                 0x005405    0x1  Data  Gb  main.o [1]
+CLK_SWR                 0x0050c4    0x1  Data  Gb  main.o [1]
+CSTACK$$Base            0x000600          --   Gb  - Linker created -
+CSTACK$$Limit           0x000800          --   Gb  - Linker created -
+INTVEC$$Base            0x008000          --   Gb  - Linker created -
+INTVEC$$Limit           0x008080          --   Gb  - Linker created -
+Region$$Table$$Base     0x008355          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00835d          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Base   0x008464          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Limit  0x008466          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Base
+                        0x008464          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Limit
+                        0x008464          --   Gb  - Linker created -
+STAVRP::ADC::ADC<STAVRP::ADC::Channel<(unsigned char)0, (&ADCFunc), STAVRP::ADC::ChannelNOP>, (int)1, STAVRP::STM8S::ADCDriver>::Handler()
+                        0x00841d   0x12  Code  Gb  main.o [1]
+STAVRP::Blink<STAVRP::STM8S::PortB<(int)1, (unsigned char)1>>::TimerUpdate()
+                        0x0082cc   0x38  Code  Gb  main.o [1]
+STAVRP::Blink<STAVRP::STM8S::PortB<(int)1, (unsigned char)1>>::data
+                        0x000028    0x4  Data  Gb  main.o [1]
+STAVRP::Button<STAVRP::STM8S::PortB<(int)2, (unsigned char)130>, (int)1, (int)8>::Check()
+                        0x008211   0x73  Code  Gb  main.o [1]
+STAVRP::Button<STAVRP::STM8S::PortB<(int)2, (unsigned char)130>, (int)1, (int)8>::TimerUpdate()
+                        0x008284   0x48  Code  Gb  main.o [1]
+STAVRP::Button<STAVRP::STM8S::PortB<(int)2, (unsigned char)130>, (int)1, (int)8>::data
+                        0x000024    0x4  Data  Gb  main.o [1]
+STAVRP::HandlerData<(int)13>::handler_ptr
+                        0x00002c    0x2  Data  Gb  main.o [1]
+STAVRP::HandlerData<(int)24>::handler_ptr
+                        0x00002e    0x2  Data  Gb  main.o [1]
+STAVRP::STM8S::ADC1_EOC_handler()
+                        0x00837d   0x20  Code  Gb  main.o [1]
+STAVRP::STM8S::TIM1_OVR_UIF_handler()
+                        0x00835d   0x20  Code  Gb  main.o [1]
+STAVRP::Timer::Call<(&UpdateSec), (unsigned char)20, STAVRP::Timer::NextNop>::count
+                        0x000031    0x1  Data  Gb  main.o [1]
+STAVRP::Timer::Universal<(unsigned char)12, STAVRP::STM8S::Timer1<STAVRP::STM8S::MCU<(STAVRP::STM8S::MCUClock::type)0, (STAVRP::STM8S::MCUDiv::type)0>, (unsigned int)20, (unsigned int)0, (unsigned int)0>, (&Update50MSec), STAVRP::Timer::Call<(&UpdateSec), (unsigned char)20, STAVRP::Timer::NextNop>>::Handler()
+                        0x008330   0x25  Code  Gb  main.o [1]
+STAVRP::Timer::Universal<(unsigned char)12, STAVRP::STM8S::Timer1<STAVRP::STM8S::MCU<(STAVRP::STM8S::MCUClock::type)0, (STAVRP::STM8S::MCUDiv::type)0>, (unsigned int)20, (unsigned int)0, (unsigned int)0>, (&Update50MSec), STAVRP::Timer::Call<(&UpdateSec), (unsigned char)20, STAVRP::Timer::NextNop>>::count
+                        0x000030    0x1  Data  Gb  main.o [1]
+TIM1_ARRH               0x005262    0x1  Data  Gb  main.o [1]
+TIM1_ARRL               0x005263    0x1  Data  Gb  main.o [1]
+TIM1_PSCRH              0x005260    0x1  Data  Gb  main.o [1]
+TIM1_PSCRL              0x005261    0x1  Data  Gb  main.o [1]
+_A_ADC_CR1              0x005401    0x1  Data  Gb  main.o [1]
+_A_ADC_CR2              0x005402    0x1  Data  Gb  main.o [1]
+_A_ADC_CSR              0x005400    0x1  Data  Gb  main.o [1]
+_A_CLK_CKDIVR           0x0050c6    0x1  Data  Gb  main.o [1]
+_A_CLK_SWCR             0x0050c5    0x1  Data  Gb  main.o [1]
+_A_PB_CR1               0x005008    0x1  Data  Gb  main.o [1]
+_A_PB_CR2               0x005009    0x1  Data  Gb  main.o [1]
+_A_PB_DDR               0x005007    0x1  Data  Gb  main.o [1]
+_A_PB_IDR               0x005006    0x1  Data  Gb  main.o [1]
+_A_PB_ODR               0x005005    0x1  Data  Gb  main.o [1]
+_A_TIM1_CR1             0x005250    0x1  Data  Gb  main.o [1]
+_A_TIM1_IER             0x005254    0x1  Data  Gb  main.o [1]
+_A_TIM1_SR1             0x005255    0x1  Data  Gb  main.o [1]
+__DebugBreak            0x008466    0x1  Code  Gb  __dbg_break.o [3]
+__call_ctors            0x0083d8   0x1d  Code  Gb  cppinit.o [4]
+__exit                  0x008409   0x14  Code  Gb  __dbg_xxexit.o [3]
+__iar_cstart_call_ctors
+                        0x0083c8         Code  Gb  cstartup.o [4]
+__iar_data_init2        0x0083f5   0x14  Code  Gb  init.o [4]
+__iar_program_start     0x0083bb         Code  Gb  cstartup.o [4]
+__iar_unhandled_exception
+                        0x008461         Code  Gb  unhandled_exception.o [4]
+__iar_zero_init2        0x00839d         Code  Gb  init_small.o [4]
+__intvec                0x008000         Data  Gb  interrupt.o [4]
+__low_level_init        0x00845b    0x3  Code  Gb  low_level_init.o [4]
+__sti__routine          0x008454    0x4  Code  Lc  main.o [1]
+_exit                   0x00844f         Code  Gb  cexit.o [4]
+_interrupt_13           0x00835d         Code  Gb  main.o [1]
+_interrupt_24           0x00837d         Code  Gb  main.o [1]
+exit                    0x00845e    0x3  Code  Gb  exit.o [4]
+fifo                    0x000010   0x14  Data  Gb  main.o [1]
+main                    0x008080  0x101  Code  Gb  main.o [1]
+
+
+[1] = L:\DIY\AxProjects\lib.c\stavrp\examples\stm8s\Debug\Obj
+[2] = command line
+[3] = dbgstm8smd.a
+[4] = dlstm8smn.a
+
+  989 bytes of readonly  code memory
+  138 bytes of readonly  data memory
+  562 bytes of readwrite data memory (+ 20 absolute)
+
+Errors: none
+Warnings: none

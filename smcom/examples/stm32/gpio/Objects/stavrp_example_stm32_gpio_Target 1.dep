@@ -1,0 +1,30 @@
+Dependencies for Project 'stavrp_example_stm32_gpio', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.cpp)(0x59D952B2)(--cpp -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\lib.c --cpp11-IZ:\axillent@nas\DIY\AxProjects\lib.c\stavrp\examples\stm32\gpio\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="522" -D_RTE_ -DSTM32F030x6-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/mcu.h)(0x59DB779C)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/../../stavrp.h)(0x59DB6700)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include\stm32f0xx.h)(0x56EA3C8A)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include\stm32f030x6.h)(0x56EA3C8A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0.h)(0x5825802E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F64D08)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x5825802E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x5825802E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include\system_stm32f0xx.h)(0x56EA3C8A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F64D08)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/gpio.h)(0x59D503C9)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/../../gpio.h)(0x59D552D6)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/../../stm32/f0/gpio.h)(0x59D503C9)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/timer1.h)(0x59D95148)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/timer_tmpl.h)(0x59DB78BB)
+I (..\..\..\..\..\lib.c\stavrp/blink.h)(0x59C8F56C)
+I (..\..\..\..\..\lib.c\stavrp/adc.h)(0x59D54F99)
+I (..\..\..\..\..\lib.c\stavrp/stm32/f0/adc.h)(0x59D55335)
+I (..\..\..\..\..\lib.c\stavrp/timer.h)(0x59BEC459)
+F (RTE\Device\STM32F030K6\startup_stm32f030x6.s)(0x56EA3C8A)(--cpu Cortex-M0 -g --apcs=interwork -IZ:\axillent@nas\DIY\AxProjects\lib.c\stavrp\examples\stm32\gpio\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include--pd "__UVISION_VERSION SETA 522" --pd "_RTE_ SETA 1" --pd "STM32F030x6 SETA 1"--list .\listings\startup_stm32f030x6.lst --xref -o .\objects\startup_stm32f030x6.o --depend .\objects\startup_stm32f030x6.d)
+F (RTE\Device\STM32F030K6\system_stm32f0xx.c)(0x56EA3C8A)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\lib.c --cpp11-IZ:\axillent@nas\DIY\AxProjects\lib.c\stavrp\examples\stm32\gpio\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="522" -D_RTE_ -DSTM32F030x6-o .\objects\system_stm32f0xx.o --omf_browse .\objects\system_stm32f0xx.crf --depend .\objects\system_stm32f0xx.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include\stm32f0xx.h)(0x56EA3C8A)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include\stm32f030x6.h)(0x56EA3C8A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm0.h)(0x5825802E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F64D08)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h)(0x5825802E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h)(0x5825802E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include\system_stm32f0xx.h)(0x56EA3C8A)

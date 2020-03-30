@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>578368086</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\List\example_mix01.map</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$TOOLKIT_DIR$\inc\iostm8s005k6.h</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8s005k6.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$PROJ_DIR$\Debug\Exe\example_mix01.out</file>
+            <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\example_mix01.pbd</file>
+            <file>$PROJ_DIR$\..\..\..\..\proj.swi\swi_firmware\swi_w3p_spi_bridge\main.cpp</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\buffer.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\stm8s\gpio.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\button.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\common\eeprom_inc.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\adc.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\stm8s\eeprom.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\stavrp.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\stm8s\eeprom.c</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\timer.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\stm8s\timer1.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\blink.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\gpio.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\stm8s\mcu.h</file>
+            <file>L:\DIY\AxProjects\lib.c\stavrp\stm8s\adc.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\proj.swi\swi_firmware\swi_w3p_box_rs232_01\main.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\proj.swi\swi_firmware\swi_w3p_box_light02\main.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\proj.swi\swi_firmware\swi_w3p_box_console_v2\main.cpp</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 30 19 9 15 20 1 2 0 17 16 7 11 21 6 32 25 35 29 31 27 33 36 28 37 26 34 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 2 30 9 33 28 6 32 25 34 19 20 7 35 29 36 26 24 21 15 1 31 0 11 17 16 27 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\example_mix01.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 10 12 8 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 14 3</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>4186842850</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\button.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\example_mix01.out</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\iostm8s005k6.h</file>
+            <file>$PROJ_DIR$\Debug\List\example_mix01.map</file>
+            <file>$PROJ_DIR$\..\..\gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8s005k6.icf</file>
+            <file>$PROJ_DIR$\..\..\stm8s\mcu.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\buffer.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+            <file>$PROJ_DIR$\..\..\stm8s\eeprom.c</file>
+            <file>$PROJ_DIR$\..\..\stm8s\adc.h</file>
+            <file>$PROJ_DIR$\..\..\stm8s\eeprom.h</file>
+            <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\..\stm8s\timer1.h</file>
+            <file>$PROJ_DIR$\..\..\adc.h</file>
+            <file>$PROJ_DIR$\..\..\data.h</file>
+            <file>$PROJ_DIR$\..\..\timer.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\stavrp.h</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$PROJ_DIR$\..\..\stm8s\gpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\..\..\blink.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\example_mix01.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 14 34 8 2</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 30 6 10 22 3 24 1 23 5 16 18 33 4 29 28 32 12 21 19 27 25 15 26 20 0 35 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 24 27 22 30 25 26 4 1 28 32 35 21 0 17 6 10 3 18 29 12 15 20 23 33 5 16 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 7 11</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <tool>ICCSTM8</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
